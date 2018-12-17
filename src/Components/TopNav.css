@@ -1,0 +1,38 @@
+.socialIcon {
+    font-size: 2rem;   
+    padding: 0 14px 0 14px;
+}
+
+.indexLink {
+    font-family: Acme;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 4px 4px 4px 4px;
+}
+
+.portfolioLink {
+    margin-bottom: 0px;
+    font-family: Acme;
+    font-size: 2rem;
+}
+
+.topNav {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #068c49;
+}
+
+.leftAligned {
+    flex: 0 0 400px;
+    display: flex;
+}
+
+.rightAligned {
+    flex: 0 0 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#topNavContainer{
+    background: #068c49;
+}

@@ -1,0 +1,131 @@
+/*.fadein {*/
+/*    animation-name: fadein;*/
+/*    animation-duration: 2s;*/
+/*    animation-delay: 1s;*/
+/*    animation-fill-mode: backwards;*/
+/*}*/
+
+/*.bobbingAnim {*/
+/*    animation-name: bobbingAnim;*/
+/*    animation-duration: 0.8s;*/
+/*    animation-timing-function: cubic-bezier(0,0.1,0.2,1);*/
+/*}*/
+
+/*.bobDown {*/
+/*    animation-name: bobDown;*/
+/*    animation-duration: 1.2s;*/
+/*    animation-delay: 0.1s;*/
+/*    animation-fill-mode: backwards;*/
+/*}*/
+
+/*.moveinHeading {*/
+/*    animation-name: moveinHeading;    */
+/*    animation-duration: 0.8s;*/
+/*    animation-delay: 0.8s;*/
+/*    animation-fill-mode: backwards;*/
+/*}*/
+
+/*.scaleIn1 {*/
+/*    animation-name: scaleIn;    */
+/*    animation-duration: 0.8s;*/
+/*    animation-delay: 1s;*/
+/*    animation-fill-mode: backwards;*/
+/*}*/
+
+/*.scaleIn2 {*/
+/*    animation-name: scaleIn;    */
+/*    animation-duration: 1.2s;*/
+/*    animation-delay: 1.2s;*/
+/*    animation-fill-mode: backwards;*/
+/*}*/
+
+/*.scaleIn3 {*/
+/*    animation-name: scaleIn;    */
+/*    animation-duration: 1.8s;*/
+/*    animation-delay: 0.8s;*/
+/*    animation-fill-mode: backwards;*/
+/*}*/
+
+/*.tween1 {*/
+/*    animation-name: tween1;    */
+/*    animation-duration: 1s;*/
+/*    animation-iteration-count: infinite;*/
+/*}*/
+
+/*.scrollDownAnim {*/
+/*    animation-name: scrollDownAnim;    */
+/*    animation-duration: 4s;*/
+/*    animation-iteration-count: infinite;*/
+/*}*/
+
+
+/*@keyframes fadein {*/
+/*    0% { opacity: 0; }*/
+/*    100%   { opacity: 1; }*/
+/*}*/
+
+/*@keyframes bobDown {*/
+/*  0% {*/
+/*       transform: translate(0px, -600px);  */
+/*       animation-timing-function:ease-in;*/
+/*  }*/
+/*  100% {*/
+/*       transform: translate(0px, 0px);*/
+/*       animation-timing-function:ease-in;*/
+/*  }*/
+/*}*/
+
+/*@keyframes bobbingAnim {*/
+/*  0% {*/
+/*       transform: translate(0px, 1000px);  */
+/*  }*/
+/*  100% {*/
+/*       transform: translate(0px, 0px);*/
+/*  }*/
+/*}*/
+
+/*@keyframes moveinHeading {*/
+/*  0% {*/
+/*      opacity: 0;*/
+/*       transform: translate(-640px, 0px);  */
+/*       animation-timing-function:ease-out;*/
+/*  }*/
+/*    50% {*/
+/*      opacity: 0.5*/
+/*  }*/
+/*  100% {*/
+/*      opacity: 1;*/
+/*      transform: translate(0px, 0px);*/
+/*      animation-timing-function:ease-out;*/
+/*  }*/
+/*}*/
+
+/*@keyframes scaleIn {*/
+/*    0% {*/
+/*        transform: scale(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: scale(1);*/
+/*    }*/
+/*}*/
+
+/*@keyframes tween1 {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+/*@keyframes scrollDownAnim {*/
+/*    0% {*/
+/*       transform: translate(0px, 0px);*/
+/*    }*/
+/*    50% {*/
+/*       transform: translate(0px, -10px);*/
+/*    }*/
+/*    100%{*/
+/*       transform: translate(0px, 0px);*/
+/*    }*/
+/*}*/
