@@ -6,18 +6,18 @@ import Home from './Components/Home';
 import Works from './Components/Works';
 import TopNav from './Components/TopNav';
 
-        // <Route exact path='/about' component = { About }/> 
-        // <Route exact path='/contact' component = { Contact }/> 
+        // <Route exact path='/about' component = { About }/>
+        // <Route exact path='/contact' component = { Contact }/>
 
 class App extends Component {
     constructor(location) {
         super();
         this.state = {
-            currentMain:'Home'    
+            currentMain:'Home'
         };
         // this.location = this.props.location;
     }
-    // <Route exact path='/works' component = { Works }/> 
+    // <Route exact path='/works' component = { Works }/>
 
 
 
@@ -28,9 +28,8 @@ class App extends Component {
         </div>
         <div id="appContainer">
             <TopNav/>
-            <div id="topScrollIndicator" className="fadein scalable">
-                <p className="portfolioLink secondaryColor scrollDownAnim">Home</p>
-                <i className="fa fa-chevron-up secondaryColor scrollDownAnim"></i>
+            <div id="topScrollIndicator">
+                <i className="fa fa-chevron-up"></i>
             </div>
                 <TransitionGroup>
                     <CSSTransition
@@ -39,23 +38,22 @@ class App extends Component {
                     timeout={1000}
                     >
                         <Switch location={location}>
-                            <Route exact path='/' component={Home}/> 
+                            <Route exact path='/' component={Home}/>
                             <Route exact path='/Works' component={Works}/>
                         </Switch>
                     </CSSTransition>
                 </TransitionGroup>
-            <div id="bottomScrollIndicator" className="fadein scalable">
-                <i className="fa fa-chevron-down secondaryColor scrollDownAnim"></i>
-                <p className="portfolioLink secondaryColor scrollDownAnim">Works</p>
+            <div id="bottomScrollIndicator">
+                <i className="fa fa-chevron-down"></i>
             </div>
         </div>
     </div>)
     }
-    
+
     shouldComponentUpdate() {
         return false;
     }
-    
+
     componentWillMount() {
         this.ss = new ScrollSwipe({
             target: document, // Element must be a single dom-node per ScrollSwipe Instance
@@ -67,7 +65,7 @@ class App extends Component {
             touchCb: this.handleScroll // The action you wish to perform when a touch reacts (details below)
         });
     }
-    
+
     handleScroll(data) {
         if (data.direction === "VERTICAL" && data.intent > 0) {//scrolled top
             window.location.href = '/Works';
@@ -76,7 +74,7 @@ class App extends Component {
             window.location.href = '/';
         }
     }
-    
+
     componentWillUnmount() {
         this.ss.killAll();
     }

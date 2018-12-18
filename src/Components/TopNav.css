@@ -1,6 +1,7 @@
 .socialIcon {
-    font-size: 2rem;   
+    font-size: 2rem;
     padding: 0 14px 0 14px;
+    color: #EAE7DC;
 }
 
 .indexLink {
@@ -8,6 +9,7 @@
     font-size: 1.4rem;
     text-decoration: none;
     padding: 4px 4px 4px 4px;
+    color: #EAE7DC;
 }
 
 .portfolioLink {
@@ -20,7 +22,7 @@
     padding: 10px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #068c49;
+    /* border-bottom: 1px solid #068c49; */
 }
 
 .leftAligned {
@@ -34,5 +36,17 @@
     flex-direction: row-reverse;
 }
 #topNavContainer{
-    background: #068c49;
+    /* background: #D8C3A5; */
+    background: #8E8D8A;
+    /* border-bottom: 4px solid #8E8D8A; */
+}
+
+.hoverScale:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.scaleLow:hover {
+    transform: scale(1.01);
+    /*cursor: pointer;*/
 }

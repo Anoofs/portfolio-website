@@ -1,4 +1,4 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
 import './TopNav.css';
 
 class TopNav extends Component {
@@ -7,15 +7,15 @@ class TopNav extends Component {
             <div id="topNavContainer" className="bobDown">
                 <nav className="topNav">
                     <div className="leftAligned">
-                        <a className="indexLink scalable" href="">Anoof Shaikh</a>
+                        <a className="indexLink  scaleLow" href="">Anoof Shaikh</a>
                     </div>
                     <div className="rightAligned">
-                        <a className="socialIcon" href=""><i className="fa fa-linkedin scaleIn1 hoverable"></i></a>
-                        <a className="socialIcon" href=""><i className="fa fa-twitter scaleIn1 hoverable"></i></a>
-                        <a className="socialIcon" href=""><i className="fa fa-instagram scaleIn1 hoverable"></i></a>
+                        <a className="socialIcon" href=""><i className="fa fa-linkedin hoverScale"></i></a>
+                        <a className="socialIcon" href=""><i className="fa fa-twitter hoverScale"></i></a>
+                        <a className="socialIcon" href=""><i className="fa fa-instagram hoverScale"></i></a>
                     </div>
                     <div className="hamburgerContainer">
-                        <a className="socialIcon" href=""><i className="fa fa-bars hoverable"></i></a>
+                        <a className="socialIcon" href=""><i className="fa fa-bars hoverScale"></i></a>
                     </div>
                 </nav>
             </div>
