@@ -9,8 +9,6 @@ function Page({ children, color, background, location: { state } }) {
     page: true,
     "page--prev": state && state.prev
   });
-  console.log("Page state " + state);
-  console.log("Page children" + children);
   return (
     <section
       className={cx}

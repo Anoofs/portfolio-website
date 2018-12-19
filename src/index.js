@@ -9,6 +9,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import TopNav from './Components/TopNav';
 import Home from './Components/Home';
 import Works from './Components/Works';
+import Redirector from './Components/Redirector';
 import registerServiceWorker from './registerServiceWorker';
 
 import '../node_modules/font-awesome/css/font-awesome.min.css';
@@ -19,10 +20,11 @@ ReactDOM.render(
         <div className="bg"></div>
         <TopNav/>
         <Route
-          render={({ location }) => {
+          render={({ location, history }) => {
             const { pathname } = location;
             return (
                 <TransitionGroup>
+                  <Redirector history = {history}/>
                   <CSSTransition key={pathname} classNames="page"
                         timeout={{
                           enter: 1000,
@@ -32,8 +34,8 @@ ReactDOM.render(
                         location={location}
                         render={() => (
                           <Switch>
-                            <Route exact path="/" component={Home} />
-                            <Route path="/works" component={Works} />
+                            <Route exact path="/" history={history} component={Home} />
+                            <Route path="/works" history={history} component={Works} />
                           </Switch>
                         )}
                       />

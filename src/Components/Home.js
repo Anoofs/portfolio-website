@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css';
-import ScrollSwipe from 'scroll-swipe';
 import Page from '../Page';
 
 class Home extends Component {
@@ -28,15 +27,7 @@ class Home extends Component {
     }
 
     componentWillMount() {
-        // this.ss = new ScrollSwipe({
-        //     target: document, // Element must be a single dom-node per ScrollSwipe Instance
-        //     scrollSensitivity: 10, // The lower the number, the more sensitive
-        //     touchSensitivity: 0, // The lower the number, the more senitive
-        //     scrollPreventDefault: true, // prevent default option for scroll events
-        //     touchPreventDefault: true, // prevent default option for touch events
-        //     scrollCb: this.handleScroll,  // The action you wish to perform when a scroll reacts (details below)
-        //     touchCb: this.handleScroll // The action you wish to perform when a touch reacts (details below)
-        // });
+
     }
 
     componentDidMount() {
