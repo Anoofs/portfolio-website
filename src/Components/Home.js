@@ -1,39 +1,42 @@
 import React, { Component } from 'react';
 import './Home.css';
 import ScrollSwipe from 'scroll-swipe';
+import Page from '../Page';
 
 class Home extends Component {
     render() {
         return (
-                <div className="mainContent fadein">
-                    <div id="leftMain">
-                        <h1 className="mainHeader moveinHeading">ANOOF <br></br>SHAIKH</h1>
-                        <div className="mainBorder fadein"></div>
-                        <p className="mainDescription moveinHeading">
-                            User Interface / User Experience
-                        </p>
-                    </div>
-                    <div id="rightMain">
-
-                    </div>
+          <Page>
+            <div id="homeId" className="mainContent">
+                <div id="leftMain">
+                    <h1 className="mainHeader">ANOOF <br></br>SHAIKH</h1>
+                    <div className="mainBorder fadein"></div>
+                    <p className="mainDescription">
+                        User Interface / User Experience
+                    </p>
                 </div>
+                <div id="rightMain">
+
+                </div>
+            </div>
+          </Page>
         );
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
+        // console.log(nextProps);
     }
 
     componentWillMount() {
-        this.ss = new ScrollSwipe({
-            target: document, // Element must be a single dom-node per ScrollSwipe Instance
-            scrollSensitivity: 10, // The lower the number, the more sensitive
-            touchSensitivity: 0, // The lower the number, the more senitive
-            scrollPreventDefault: true, // prevent default option for scroll events
-            touchPreventDefault: true, // prevent default option for touch events
-            scrollCb: this.handleScroll,  // The action you wish to perform when a scroll reacts (details below)
-            touchCb: this.handleScroll // The action you wish to perform when a touch reacts (details below)
-        });
+        // this.ss = new ScrollSwipe({
+        //     target: document, // Element must be a single dom-node per ScrollSwipe Instance
+        //     scrollSensitivity: 10, // The lower the number, the more sensitive
+        //     touchSensitivity: 0, // The lower the number, the more senitive
+        //     scrollPreventDefault: true, // prevent default option for scroll events
+        //     touchPreventDefault: true, // prevent default option for touch events
+        //     scrollCb: this.handleScroll,  // The action you wish to perform when a scroll reacts (details below)
+        //     touchCb: this.handleScroll // The action you wish to perform when a touch reacts (details below)
+        // });
     }
 
     componentDidMount() {
@@ -73,7 +76,7 @@ class Home extends Component {
 
     }
     componentWillUnmount() {
-        this.ss.killAll();
+        // this.ss.killAll();
     }
 }
 

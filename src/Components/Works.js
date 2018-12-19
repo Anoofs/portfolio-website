@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import './Works.css';
+import Page from '../Page';
 
 class Works extends Component {
     render() {
         return (
-                <div className="mainContent fadein">
-                    <div id="leftMain">
-                        <h1 className="mainHeader moveinHeading">WORKS</h1>
-                        <div className="mainBorder fadein"></div>
-                    </div>
-                    <div id="rightMain">
-                    </div>
-                </div>
+          <Page>
+              <div id="worksId" className="mainContent" >
+                  <div id="leftMain">
+                      <h1 className="mainHeader">WORKS</h1>
+                      <div className="mainBorder"></div>
+                  </div>
+                  <div id="rightMain">
+                  </div>
+              </div>
+          </Page>
         );
     }
 }

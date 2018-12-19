@@ -3,16 +3,45 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './Components/Anims.css';
 import {
-    BrowserRouter as Router
+    BrowserRouter as Router, Route, Switch
 } from 'react-router-dom';
-import App from './AppWrapper';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import TopNav from './Components/TopNav';
+import Home from './Components/Home';
+import Works from './Components/Works';
 import registerServiceWorker from './registerServiceWorker';
 
-import '../node_modules/font-awesome/css/font-awesome.min.css'; 
-    
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
 ReactDOM.render(
     <Router>
-        <App />
-    </Router>, 
+      <div>
+        <div className="bg"></div>
+        <TopNav/>
+        <Route
+          render={({ location }) => {
+            const { pathname } = location;
+            return (
+                <TransitionGroup>
+                  <CSSTransition key={pathname} classNames="page"
+                        timeout={{
+                          enter: 1000,
+                          exit: 1000,
+                        }} >
+                      <Route
+                        location={location}
+                        render={() => (
+                          <Switch>
+                            <Route exact path="/" component={Home} />
+                            <Route path="/works" component={Works} />
+                          </Switch>
+                        )}
+                      />
+                  </CSSTransition>
+                </TransitionGroup>
+            );}}
+        />
+      </div>
+    </Router>,
     document.getElementById('root'));
 registerServiceWorker();
